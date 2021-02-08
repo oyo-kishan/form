@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="Main.js"></script>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    </head>
+
+    <body>
+        <div class ="div1">
+
+        <form class="form" id="formId">
+
+            <div class="div2">
+                <label class="nameText" for="Name">Name</label><br>
+                <input
+                    class="nameInput" id= "name" type="text" placeholder="Enter Your Name" autocomplete="on" required
+                     />
+            </div>
+
+           <div class="div3">
+                <label class="emailText" for="Email">Email</label><br>
+                <input 
+                    class="emailInput" id= "email" type="text" placeholder="Enter Your Email" autocomplete="on"required
+                    />
+           </div>
+
+           <div class="div4">
+                <label class="passwordText" for="Password">Password</label><br>
+                <input 
+                    class="passwordInput" id= "password" type="password" placeholder="Enter Your Password" autocomplete="on" required minlength="8"
+                    />
+           </div>
+
+           <div class="div5">
+                <label class="confirmPasswordText" for="confirmPassword">Confirm Password</label><br>
+                <input 
+                    class="confirmPasswordInput" id= "confirmPassword" type="password" placeholder="Confirm your password" autocomplete="on"
+                    required minlength="8"
+                    />
+           </div>
+
+           <div class="div6">
+                <label class="ageText" for="Age">Age(Optional)</label><br>
+                <input class="ageInput" id= "age" type="number" placeholder="Age" step="1" max="100" min="1" required/>
+            </div>
+            <div class=div7>
+                <label class="currentRoleText" for="currentRole">Which option best describes your current role ?</label><br>
+                <select name="Select current role" id="currentRole" required>
+                    <option value="" disabled selected>Select current role</option>
+                    <option value="Student">Student</option>
+                    <option value="Full Time Job">Full Time Job</option>
+                    <option value="Full Time Learner">Full Time Learner</option>
+                    <option value="Perfer Not To Say">Perfer Not To Say</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+
+            <div class="div8">
+                <p class="recommendText" >Would you recommend freeCodeCamp to a friend?</p>
+
+                <input type="radio" id="definitely" name="recommend" value="definitely">
+                <label for="definitely">Definitely</label><br>
+
+                <input type="radio" id="maybe" name="recommend" value="maybe">
+                <label for="maybe">Maybe</label><br>
+
+                <input type="radio" id="notSure" name="recommend" value="Not sure">
+                <label for="not sure">Not sure</label>
+            </div>
+
+            <div class="div9">
+                <label class="favouriteFeatureText" for="favouriteFeature">What is your favorite feature of freeCodeCamp?</label><br>
+                <select name="Select an option" id="favouriteFeature" required>
+                    <option value="Select an option" disabled selected>Select an option</option>
+                    <option value="Challenges">Challenges</option>
+                    <option value="Projects">Projects</option>
+                    <option value="Community">Community</option>
+                    <option value="Open Source">Open Source</option>
+                </select>
+            </div>
+
+
+            <div class="div10">
+                <p class="improvedText">What would you like to see improved? (Check all that apply)</p><br>
+
+                <input type="checkbox" id="0" name="Front-end Projects" value="Front-end Projects">
+                <label for="Front-end Projects">Front-end Projects</label><br>
+
+                <input type="checkbox" id="1" name="Back-end Projects" value="Back-end Projects">
+                <label for="Back-end Projects">Back-end Projects</label><br>
+
+                <input type="checkbox" id="2" name="Data Visualization" value="Data Visualization">
+                <label for="Data Visualization">Data Visualization</label><br>
+
+                <input type="checkbox" id="3" name="Challenges" value="Challenges">
+                <label for="Challenges">Challenges</label><br>
+
+                <input type="checkbox" id="4" name="Open Source Community" value="Open Source Community">
+                <label for="Open Source Community">Open Source Community</label><br>
+
+                <input type="checkbox" id="5" name="Gitter help rooms" value="Gitter help rooms">
+                <label for="Gitter help rooms">Gitter help rooms</label><br>
+
+                <input type="checkbox" id="6" name="Videos" value="Videos">
+                <label for="Videos">Videos</label><br>
+
+                <input type="checkbox" id="7" name="City Meetups" value="City Meetups">
+                <label for="City Meetups">City Meetups</label><br>
+
+                <input type="checkbox" id="8" name="Wiki" value="Wiki">
+                <label for="Wiki">Wiki</label><br>
+
+                <input type="checkbox" id="9" name="Forum" value="Forum">
+                <label for="Forum">Forum</label><br>
+
+                <input type="checkbox" id="10" name="Additional Courses" value="Additional Courses">
+                <label for="Additional Courses">Additional Courses</label><br>
+            </div>
+
+            <div>
+                <p class="commentText">Any comments or suggestions?</p><br>
+                <input 
+                    id= "comment" 
+                    type="text" 
+                    placeholder="Enter your comment here ..." 
+                    style="height:100px;width: 100%;vertical-align:text-top;"
+                    
+                    />
+            </div>
+
+            <button  class ="button" type="submit" value="submit" onclick="checkForm()" >Submit</button>
+
+            <div>
+                <p style="margin-top: 16px;padding-bottom: 16px;">Error will be shown down...</h1>
+                <ul id= "errorBox"></ul><br><br><br>
+            </div>
+         </form>
+         
+        </div>
+    </body>
+</html>

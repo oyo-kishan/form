@@ -1,0 +1,63 @@
+body{
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.div1{
+    background-color:rgb(106,90,205,0.1);
+    width: 700px;
+    margin:auto;
+}
+
+form{
+    width: 600px;
+    margin: 0 auto;
+}
+
+.div2,.div3,.div4,.div5,.div6,.div7,.div8,.div9,.div10{
+    padding-top: 16px;
+}
+
+label,p{
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.nameInput,.emailInput,.ageInput,.passwordInput,.confirmPasswordInput{
+  width: 100%;
+  padding: 10px 10px;
+  margin: 6px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+::placeholder {
+    font-size: 1em;
+    text-align: center left;
+    padding-left: 6px;
+    font-size: 16px;
+  }
+
+select{
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    margin:16px 0;
+    font-size: 18px;
+}
+  
+button{
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  padding:10px 275px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
