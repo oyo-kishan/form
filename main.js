@@ -111,17 +111,19 @@ const validatePassword=(errors,password)=>{
     if(!specialCharacter)push(errors,"Password must contains at least 1 special character");
 }
 
+const validateAge=(errors,age)=>{
+    if(age>100){
+        push(errors,"Enter valid age");
+    }
+}
+
+
 const validateConfirmPassword=(errors,password,confirmPassword)=>{
     if(String(password).localeCompare(String(confirmPassword))!=0){
          push(errors,"Password don't match");
     }
 }
 
-const validateAge=(errors,age)=>{
-    if(age>100){
-        push(errors,"Enter valid age");
-    }
-}
 
 const validateCurrentRole=(errors,currentRole)=>{
     if(currentRole.length==0){
